@@ -16,5 +16,5 @@ def get_gists():
     else:
         return jsonify({'error': 'Failed to fetch gists'}), response.status_code
 
-if name == '__main__':
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
